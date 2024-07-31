@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.funkollection.FunkoService.WebAPI", "br.funkollection.FunkoService.WebAPI\br.funkollection.FunkoService.WebAPI.csproj", "{5B6E23A4-BF04-4B0E-AE5A-67236C26FDFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.funkollection.FunkoService.Domain", "br.funkollection.FunkoService.Domain\br.funkollection.FunkoService.Domain.csproj", "{B7B22E51-81B2-4BBC-8AC2-7099BDCB4CFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B6E23A4-BF04-4B0E-AE5A-67236C26FDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6E23A4-BF04-4B0E-AE5A-67236C26FDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6E23A4-BF04-4B0E-AE5A-67236C26FDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6E23A4-BF04-4B0E-AE5A-67236C26FDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B22E51-81B2-4BBC-8AC2-7099BDCB4CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B22E51-81B2-4BBC-8AC2-7099BDCB4CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B22E51-81B2-4BBC-8AC2-7099BDCB4CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B22E51-81B2-4BBC-8AC2-7099BDCB4CFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A47E20DA-8F9F-446D-BA00-3F17893A8E8C}
+	EndGlobalSection
+EndGlobal
