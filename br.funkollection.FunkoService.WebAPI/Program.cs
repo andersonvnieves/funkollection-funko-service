@@ -43,4 +43,12 @@ app.MapDelete("/funko/{id}", (IMediator mediator, Guid id) => mediator.Send(""))
 .WithName("DeleteFunko")
 .WithOpenApi();
 
+app.MapGet("/serie", (IMediator mediator) => mediator.Send(""))
+.WithName("GetSeries")
+.WithOpenApi();
+
+app.MapGet("/category", (IMediator mediator) => mediator.Send(""))
+.WithName("GetCategories")
+.WithOpenApi();
+
 app.Run();
