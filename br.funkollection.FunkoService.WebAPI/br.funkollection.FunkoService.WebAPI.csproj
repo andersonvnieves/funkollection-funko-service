@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\br.funkollection.FunkoService.Domain\br.funkollection.FunkoService.Domain.csproj" />
+    <ProjectReference Include="..\br.funkollection.FunkoService.Infrastructure\br.funkollection.FunkoService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

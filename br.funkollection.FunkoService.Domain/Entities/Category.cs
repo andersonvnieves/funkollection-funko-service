@@ -8,7 +8,7 @@ namespace br.funkollection.FunkoService.Domain.Entities
 {
     public record struct Category
     {
-        public int Id { get; init; }
-        public string Label { get; init; }
+        public int Id { get; set; }
+        public string Label { get; set; }
     }
 }

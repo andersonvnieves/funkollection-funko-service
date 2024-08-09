@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.funkollection.FunkoServi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.funkollection.FunkoService.Domain", "br.funkollection.FunkoService.Domain\br.funkollection.FunkoService.Domain.csproj", "{B7B22E51-81B2-4BBC-8AC2-7099BDCB4CFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.funkollection.FunkoService.Infrastructure", "br.funkollection.FunkoService.Infrastructure\br.funkollection.FunkoService.Infrastructure.csproj", "{47BDEEF9-5E78-4FAF-AEE3-F547535A26F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "br.funkollection.FunkoService.Infrastructure", "br.funkollection.FunkoService.Infrastructure\br.funkollection.FunkoService.Infrastructure.csproj", "{47BDEEF9-5E78-4FAF-AEE3-F547535A26F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71C49765-AF27-4F9E-BD91-6AEA899E4C07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D7814C1C-A9B0-4411-A072-105BF9DD3F13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B6E23A4-BF04-4B0E-AE5A-67236C26FDFC} = {71C49765-AF27-4F9E-BD91-6AEA899E4C07}
+		{B7B22E51-81B2-4BBC-8AC2-7099BDCB4CFB} = {71C49765-AF27-4F9E-BD91-6AEA899E4C07}
+		{47BDEEF9-5E78-4FAF-AEE3-F547535A26F0} = {71C49765-AF27-4F9E-BD91-6AEA899E4C07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A47E20DA-8F9F-446D-BA00-3F17893A8E8C}

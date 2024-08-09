@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\br.funkollection.FunkoService.Domain\br.funkollection.FunkoService.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

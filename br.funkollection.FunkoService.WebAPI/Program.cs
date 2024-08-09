@@ -1,6 +1,10 @@
 using br.funkollection.FunkoService.Domain.Queries.GetFunkoById;
 using br.funkollection.FunkoService.Domain.Entities;
 using MediatR;
+using br.funkollection.FunkoService.Domain.Repositories;
+using br.funkollection.FunkoService.Infrastructure.InMemoryRepositories;
+using br.funkollection.FunkoService.Domain.Queries.GetFunkos;
+using br.funkollection.FunkoService.Domain.Commands.PostFunko;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
- builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Funko).Assembly));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Funko).Assembly));
+
+//Add Repositories
+builder.Services.AddSingleton<IFunkoRepository<Funko>, FunkoRepository>();
+builder.Services.AddSingleton<ICategoryRepository<Category>, CategoryRepository>();
+builder.Services.AddSingleton<ISerieRepository<Serie>, SerieRepository>();
 
 var app = builder.Build();
 
@@ -23,7 +32,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/funko", (IMediator mediator) => mediator.Send(""))
+app.MapGet("/funko", (IMediator mediator) => mediator.Send(new GetFunkosRequest()))
 .WithName("GetFunkos")
 .WithOpenApi();
 
@@ -31,7 +40,7 @@ app.MapGet("/funko/{id}", (IMediator mediator, Guid id) => mediator.Send(new Get
 .WithName("GetFunkoById")
 .WithOpenApi();
 
-app.MapPost("/funko", (IMediator mediator) => mediator.Send(""))
+app.MapPost("/funko", (IMediator mediator, PostFunkoRequest request) => mediator.Send(request))
 .WithName("PostFunko")
 .WithOpenApi();
 
